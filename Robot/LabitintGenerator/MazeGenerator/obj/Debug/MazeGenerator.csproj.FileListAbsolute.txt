@@ -1,0 +1,6 @@
+C:\Users\Alex\Documents\RobotLabs\MazeGenerator\MazeGenerator\bin\Debug\MazeGenerator.exe.config
+C:\Users\Alex\Documents\RobotLabs\MazeGenerator\MazeGenerator\bin\Debug\MazeGenerator.exe
+C:\Users\Alex\Documents\RobotLabs\MazeGenerator\MazeGenerator\bin\Debug\MazeGenerator.pdb
+C:\Users\Alex\Documents\RobotLabs\MazeGenerator\MazeGenerator\obj\Debug\MazeGenerator.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\RobotLabs\MazeGenerator\MazeGenerator\obj\Debug\MazeGenerator.exe
+C:\Users\Alex\Documents\RobotLabs\MazeGenerator\MazeGenerator\obj\Debug\MazeGenerator.pdb

@@ -1,0 +1,6 @@
+C:\Users\Alex\Documents\Robot\LabitintGenerator\MazeGenerator\bin\Debug\LabirintGenerator.exe.config
+C:\Users\Alex\Documents\Robot\LabitintGenerator\MazeGenerator\bin\Debug\LabirintGenerator.exe
+C:\Users\Alex\Documents\Robot\LabitintGenerator\MazeGenerator\bin\Debug\LabirintGenerator.pdb
+C:\Users\Alex\Documents\Robot\LabitintGenerator\MazeGenerator\obj\Debug\LabirintGenerator.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\Robot\LabitintGenerator\MazeGenerator\obj\Debug\LabirintGenerator.exe
+C:\Users\Alex\Documents\Robot\LabitintGenerator\MazeGenerator\obj\Debug\LabirintGenerator.pdb
