@@ -6,8 +6,8 @@
 *.DS_Store
 *.hgignore
 *.suo
-/Assets/Scripts/UnityLib/.hg
-/Library/
-/obj
-/Temp
-/Builds
+Robot/Assets/Scripts/UnityLib/.hg
+Robot/Library/
+Robot/obj
+Robot/Temp
+Robot/Builds
