@@ -40,8 +40,8 @@ namespace LabirintGenerator
 
 			int passWidth = 2;
 			int wallWidth = 1;
-			int labirintWidth = 50;
-            int labirintHeigth = 50;
+			int labirintWidth = 10;
+            int labirintHeigth = 10;
 
             tmpN = labirintHeigth / (passWidth + wallWidth);
 			tmpM = labirintWidth / (passWidth + wallWidth);

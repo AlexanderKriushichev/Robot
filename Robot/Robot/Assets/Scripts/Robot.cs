@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using System;
 
 public class Robot : MonoBehaviour {
@@ -27,9 +28,14 @@ public class Robot : MonoBehaviour {
     public SliderPower leftSlider;
     public SliderPower rightSlider;
 
+    public Toggle automaticMode;
+
     public bool complite = false;
 
     public GameObject panelFinish;
+
+    public Transform leftRay;
+    public Transform rightRay;
 
     public void Complite()
     {
@@ -95,6 +101,52 @@ public class Robot : MonoBehaviour {
     private void MoveRightWheel(float right)
     {
         transform.RotateAround(leftWheel.transform.position, new Vector3(0, 0, 1), -Time.deltaTime * speed * right);
+    }
+
+    private bool LeftRayAction()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(leftRay.position, (leftRay.TransformPoint(Vector3.up) - leftRay.position).normalized, 0.6f);
+        Debug.DrawRay(leftRay.position, (leftRay.TransformPoint(Vector3.up) - leftRay.position).normalized * 0.6f, Color.red);
+        if (hit.collider != null)
+        {
+            if (hit.collider.tag != "Finish")
+                return false;
+        }
+        return true;
+    }
+
+    private bool RightRayAction()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(rightRay.position, (rightRay.TransformPoint(Vector3.up) - rightRay.position).normalized, 0.6f);
+        Debug.DrawRay(rightRay.position, (rightRay.TransformPoint(Vector3.up) - rightRay.position).normalized * 0.6f, Color.red);
+        if (hit.collider != null)
+        {
+            if (hit.collider.tag != "Finish")
+                return false;
+        }
+        return true;
+    }
+
+    void Update()
+    {
+        if (automaticMode.isOn && !complite)
+        {
+            if (RightRayAction() && LeftRayAction())
+            {
+                Forward();
+                LeftForward();
+                RightBack();
+                RightBack();
+                LeftForward();
+            }
+            else
+            {
+                LefBack();
+                RightForward();
+                RightForward();
+                LefBack();
+            }
+        }
     }
  
 }
